@@ -705,6 +705,16 @@ Start meaia querry
     .designing .container-md .item small{
         font-size: 13px;
     }
+    body #verifyCertificate{
+        font-size: 12px;
+        padding: 6px 70px;
+        top: 2.5%;
+        right: -9%;
+    }
+    body #infoBox{
+        top: 50%;
+        right: -18% !important;
+    }
     
    
    
@@ -784,10 +794,10 @@ Start meaia querry
         height: 250px;
     }
     body #verifyCertificate{
-        font-size: 11px;
+        font-size: 9px;
         padding: 6px 70px;
-        top: 3%;
-        right: -20%;
+        top: 2.5%;
+        right: -22%;
     }
     body #infoBox{
         top: 50%;
@@ -809,12 +819,12 @@ Start meaia querry
         width: 48% !important;
     }
     body #infoBox{
-        right: -39% !important;
+        right: -35% !important;
     }
    
 }
 
-@media all and (max-width:365px){
+@media all and (max-width:395px){
     .training .container .row .col{
         width: 98% !important;
     }
@@ -823,13 +833,16 @@ Start meaia querry
         font-size: 20px;
     }
     body #infoBox{
-        right: -41.5% !important;
+        right: -39% !important;
     }
 }
 
 @media all and (max-width:325px){
     .hero{
         height: 45vh;
+    }
+    body #infoBox{
+        right: -47% !important;
     }
 }
 
