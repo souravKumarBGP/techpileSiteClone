@@ -783,6 +783,16 @@ Start meaia querry
     .designing iframe{
         height: 250px;
     }
+    body #verifyCertificate{
+        font-size: 11px;
+        padding: 6px 70px;
+        top: 3%;
+        right: -20%;
+    }
+    body #infoBox{
+        top: 50%;
+        right: -39% !important;
+    }
 }
 
 @media all and (max-width:500px){
