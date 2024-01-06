@@ -1,0 +1,40 @@
+/* ===================================== This file export on style.css ====================================== */
+
+/* ***********************************************************************************************************
+Start Main section styling
+*********************************************************************************************************** */
+main{
+    width: 100%;
+}
+main .courses_freeRegister .item{
+    box-shadow: 0px 0px 1px 3px #8080802b;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+main .courses_freeRegister .item .view{
+    display: inline-block;
+    width: 90%;
+    height: 60%;
+    text-align: center;
+    background: rgba(32, 32, 32, 0.503);
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    scale: 0;
+    transition: all 0.6s;
+}
+main .courses_freeRegister .item:hover .view{
+    scale: 1;
+    rotate: 360deg;
+}
+main .courses_freeRegister .item i{
+    font-size: 13px !important;
+    margin-bottom: 10px;
+    color: gold;
+    transition: all 0.5s;
+}
+main .courses_freeRegister .item:hover i{
+    color: tomato;
+    font-size: 16px !important;
+}

@@ -1,0 +1,98 @@
+/*================================ this css file export on style.css file====================================*/
+
+/* **********************************************************************************************************
+Start Header Section styling
+********************************************************************************************************** */
+header{
+    width: 100%;
+}
+/* ************** Configure navBar classes *************** */
+.offlineTraining_header .actv{
+    color: goldenrod !important;
+}
+.offlineTraining_header .nav-item{
+    min-height: 45px;
+    position: relative;
+    line-height: 35px;
+}
+.offlineTraining_header .nav-item a{
+    font-size: 13px !important;
+}
+.offlineTraining_header .nav-item:hover a{
+    color: goldenrod !important;
+}
+.offlineTraining_header .nav-item::before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: goldenrod;
+    transition: all 0.6s;
+    margin-top: -1px;
+}
+.offlineTraining_header .nav-item:hover:before{
+    width: 100%;
+}
+.offlineTraining_header .dropdown ul{ 
+    width: 220px !important;
+    text-align: left !important;
+    line-height: 23px !important;
+}
+.offlineTraining_header .navbar-toggler{
+    margin-top: 10px;
+}/****** End navBar Configure ******/
+
+/* **********************************************************************************************************
+Start Main Section styling
+********************************************************************************************************** */
+main{
+    width: 100%;
+}
+
+/* **************** Start RegForm Section styling ************ */
+.RegForm{
+    width: 100%;
+    min-height: 400px;
+    background: #f7f7f7;
+}
+
+/* **********************************************************************************************************
+Start footer Section styling
+********************************************************************************************************** */
+footer{
+    width: 100%;
+}
+/* ************** Stat footerTop section styling ************* */
+footer .offlineTraining_footerTop{
+    width: 100%;
+    background: #2a2d2f;
+    min-height: 200px !important;
+}
+.offlineTraining_footerTop a{
+    color: #f7f7f7bd;
+    font-size: 15px !important;
+}
+.offlineTraining_footerTop a:hover i{
+    transform: scale(1.4);
+    transition: all 0.4s;
+}
+.offlineTraining_footerTop a:hover{
+    color: gold !important;
+}
+
+
+
+/* **********************************************************************************************************
+Start Media Querry
+********************************************************************************************************** */
+@media all and (max-width:1145px){
+    .nav-item{
+        line-height: 30px;
+    }
+    .navbar-brand img{
+        width: 150px !important;
+    }
+    .nav-item a{
+        font-size: 11px !important;
+    }
+}

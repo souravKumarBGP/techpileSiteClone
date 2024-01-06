@@ -1,0 +1,34 @@
+/* ========================================== this file is export on style.css =========================== */
+
+/* *******************************************************************************************************
+start main styling 
+******************************************************************************************************** */
+main{
+    width: 100%;
+}
+
+/* ******************** Start certification section styling ************** */
+main.certificate_main .certification .item{
+    position: relative;
+    border: 2px solid tomato;
+    margin: 0 !important;
+}
+main .certification .item .transparent{
+    border: 1px solid #000;
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.7s;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+main .certification .item:hover .transparent{
+    width: 100%;
+    height: 100%;
+}/****** End certification section styling *******/

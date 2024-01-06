@@ -1,0 +1,825 @@
+/*      ***** Information *****
+    Author -    Techpile Technology Pvt.Ltd
+    Developer - SouravKumarBGP
+    Language -  CSS3
+*/
+
+/*======================================Import from about.css  ================================*/
+@import url("./about.css");
+/*======================================Import from offlineTraining.css  ================================*/
+@import url("./offlienTraining.css");
+/*======================================Import from onlineTraining.css  ================================*/
+@import url("./onlineTraining.css");
+/*======================================Import from courses.css  ================================*/
+@import url("./courses.css");
+/*======================================Import from certificate.css  ================================*/
+@import url("./certificate.css");
+/*======================================Import from summerTraining.css  ================================*/
+@import url("./summerTraining.css");
+/*======================================Import from placement.css  ================================*/
+@import url("./placement.css");
+
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+    scroll-behavior: smooth;
+}
+
+/* *******************************************************************************************************
+Common CSS Styling 
+********************************************************************************************************* */
+a{
+    text-decoration: none;
+    color: gray;
+}
+.active{
+    color: tomato !important;
+}
+/* *********** Common heading classes ********* */
+.heading span{
+    color: tomato;
+}
+.heading .line{
+    width: 10%;
+    margin: 0 auto;
+    height: 2px;
+    background-color: tomato;
+}
+.heading small{
+    color: #555555;
+}
+/* ********** Common loading class *********** */
+body .loading{
+    width: 100%;
+    height: 100vh;
+    background: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.loading .loading_box{
+    text-align: center;
+}
+.loading .loading_box .circle{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    margin: auto;
+    border: 4px solid #d0cfcf;
+    border-top-color: goldenrod;
+    margin-bottom: 15px;
+    animation: rotate 1s linear infinite;
+}
+.loading .loading_box #techpile_text{
+    font-size: 45px;
+    color: #555555;
+}
+.loading .loading_box #techpile_text b{
+    display: inline-block;
+    animation: loading 1s linear infinite alternate;
+}
+.loading .loading_box #techpile_text b:nth-child(1){
+    animation-delay: 0.1s;
+}
+.loading .loading_box #techpile_text b:nth-child(2){
+    animation-delay: 0.2s;
+}
+.loading .loading_box #techpile_text b:nth-child(3){
+    animation-delay: 0.3s;
+}
+.loading .loading_box #techpile_text b:nth-child(4){
+    animation-delay: 0.4s;
+}
+.loading .loading_box #techpile_text b:nth-child(5){
+    animation-delay: 0.5s;
+}
+.loading .loading_box #techpile_text b:nth-child(6){
+    animation-delay: 0.6s;
+}
+.loading .loading_box #techpile_text b:nth-child(7){
+    animation-delay: 0.7s;
+}
+.loading .loading_box #techpile_text b:nth-child(8){
+    animation-delay: 0.8s;
+}
+
+/* **************** Start verifyCertificate Styling ************* */
+body #verifyCertificate{
+    background: #ff6600;
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    padding: 6px 70px;
+    transform: rotate(40deg);
+    transition: all 0.5s;
+    box-shadow: 0px 0px 2px #555555;
+    position: fixed;
+    top: 5%;
+    right: -6%;
+    z-index: 998;
+}
+body #verifyCertificate:hover{
+    box-shadow: 0px 0px 2px 1px #202020b0;
+}
+
+/* ******************** Start infoBox Styling ****************** */
+body #infoBox{
+    position: fixed;
+    top: 50%;
+    right: -11.9%;
+    transform: rotate(90deg);
+    z-index: 998;
+}
+body #infoBox a{
+    display: inline-block;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 13px;
+    padding: 2px 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: infoBtnChangeBgColor 1s linear infinite;
+}
+body #infoBox #info1{
+    animation-delay: 0.1s;
+}
+body #infoBox #info2{
+    animation-delay: 0.3s;
+}
+body #infoBox #info3{
+    animation-delay: 0.2s;
+}
+
+
+/* *******************************************************************************************************
+Custom ScrollBar Styling 
+********************************************************************************************************* */
+::-webkit-scrollbar{
+    width: 5px;
+    background: rgb(238, 212, 140);
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(240, 177, 90);
+    border-radius: 10px;
+}
+
+
+/* *******************************************************************************************************
+Start Header section styling 
+********************************************************************************************************* */
+header{
+    width: 100%;
+}
+/* *************** Start  headerTop Styling ************/
+.headerTop{
+    height: 25px;
+    background-color: #e8e8e8;   
+}
+.headerTop small a{
+    font-size: 11px;
+    transition: all 0.5s;
+}
+.headerTop small a span{
+    border-radius: 100%;
+    padding: 2px 5.4px;
+    animation: rotate 1s linear infinite !important;
+    display: inline-block;
+}
+.headerTop small a:hover{
+    color: orangered !important;
+}
+.headerTop small a:hover span{
+    outline: 1px solid orangered;
+}
+.header_top_socalMedia span{
+    margin: 0 5px;
+}
+.header_top_socalMedia span a{
+    font-size: 13px;
+    padding: 2px 6px;
+    transition: all 0.4s;
+    border-radius: 100%;
+    display: inline-block;
+}
+.header_top_socalMedia span a:hover{
+    outline: 1px solid orangered;
+}/***** End headerTop Stling ****/
+
+/* ************* Start  headerManue Styling ************/
+.headerManue{
+    min-height: 55px;
+    background: #fff;
+    z-index: 900;
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 1px 1px 2px #8e8a8a30;
+
+}
+.headerManue .navbar a{
+    font-size: 12.7px;
+    transition: all 0.5s;
+    color: gray;
+}
+.headerManue .navbar a i{
+    font-size: 10px;
+}
+.headerManue .navbar a:hover{
+    color: tomato;
+}
+.headerManue .navbar li > ul{
+    border: none;
+    box-shadow: -2px 2px 3px rgb(142, 138, 138);
+    width: 200px;
+
+}/******* End headerManue Styling *******/
+
+/* ********* Start hero section styling ************** */
+.hero{
+    width: 100%;
+    height: 95vh;
+    background: #09acf5;
+}
+.hero .hero_left{
+    position: relative;
+}
+.hero .hero_left #ls7{
+    width: 30%;
+    margin-left: 25%;    
+}
+.hero .hero_left #ls6{
+    position: absolute;
+    top: 0;
+    right: 15%;
+}
+.hero .hero_left #ls5{
+    width: 10%;
+    position: absolute;
+    right: 3%;
+}
+.hero .hero_left #ls4{
+    width: 20%;
+    position: absolute;
+    top: 10%;
+    right: 12%;
+}
+.hero .hero_left #ls3{
+    width: 22%;
+    position: absolute;
+    right: 15%;
+    top: 40%;
+    z-index: 10;
+}
+.hero .hero_left #ls2{
+    width: 18%;
+    position: absolute;
+    bottom: 0;
+    left: 12%;
+    z-index: 10;
+}
+.hero .hero_left #ls1{
+    width: 60%;
+    margin: 10px auto;
+    display: block;
+    position: relative;
+    z-index: 9;
+}
+.hero_right h1{
+    font-size: 35px;
+}
+.hero_right h4{
+    font-size: 22px;
+}
+.hero_right h5{
+    font-size: 18px !important;
+}
+.hero_right h3{
+    font-size: 28px;
+}
+.hero .hero_right .imgBox img{
+    width: 15%;
+    padding: 5px;
+}/******* End hero Styling *******/
+
+/* *****************************************************************************************************
+Start main section styling
+****************************************************************************************************** */
+main{
+    width: 100%;
+}
+/* ********* Start training section styling ************** */
+main .training{
+    width: 100%;;
+    min-height: 255px;
+    background: #f1f3f4;
+}
+.training .row {
+    justify-content: space-between;
+}
+.training .row .col{
+    border-radius: 5px;
+    transition: all 0.5s;
+    width: 16%;
+}
+.training .row .col:hover{
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.359);
+    animation: setImgbg 2s linear infinite alternate;
+    background-repeat: no-repeat;
+    background: linear-gradient(#f7f6f6e9, #f7f6f6e9), url("./images/loading.jpeg");
+}
+.training .row .col:hover .item{
+    border: 1px solid #555555;
+}
+.training .item{
+    height: 84px;
+    border: 1px solid #fff;
+    display: flex;    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.training .item a{
+    color: #fff;
+}
+.training .row .col:hover .item a{
+    color: #555555;
+}/****** End training styling *****/
+
+/* *********** Start designing section styling ************ */
+main .designing{
+    min-height: 545px;
+    padding: 25px 10px;
+}
+.designing .container-md .item{
+    display: flex;
+    gap: 20px;
+}
+.designing .container-md .item  i{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 100%;
+    text-align: center;
+    background: #ff6600;
+    font-size: 15px;
+    color: #fff;
+}/* End designing section styling */
+
+/* ********** Start amazingTrainging section styling **** */
+main .amizingTraining{
+    width: 100%;
+    background: #e8e8e8;   
+    min-height: 500px;
+    padding: 0 15px;
+}
+.amizingTraining .item{
+    min-height: 230px;
+    background: #fff;
+    padding: 25px 20px;
+    position: relative;
+    box-shadow: 0px 0px 1px rgb(255, 187, 0);
+    transition: all 0.5s;
+}
+.amizingTraining .item:hover{
+    background: linear-gradient(#ffffffe9, #ffffffe9),url("./images/loading.jpeg");
+    animation: setImgbg 5s linear infinite alternate;
+    box-shadow: 0px 0px 5px gray;
+    transform: scale(1.03);
+}
+.amizingTraining .item h5{
+    font-size: 16px;
+    color: #202020;
+}
+.amizingTraining .item a{
+    border: 1px solid #555555;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.amizingTraining .item:hover a{
+    border-color: goldenrod;
+    color: goldenrod;
+}
+.amizingTraining .item small{
+    color: #555555;
+    font-size: 12px;
+    line-height: 22px !important;
+    display: inline-block;
+    text-align: justify;
+}
+.amizingTraining .item i{
+    background: #ff6600;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 100%;
+    position: absolute;
+    top: -25px;
+    left: 10px;
+}
+.amizingTraining .item .line{
+    width: 0px;
+    height: 2px;
+    background: tomato;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: all 0.5s;
+
+}
+.amizingTraining .item:hover .line{
+    width: 25%;
+}/***** End amazing Training Section styling ****/
+
+/* ********** Start Pricing&Plan section styling ********* */
+main .pricing{
+    width: 100%;
+    min-height: 500px;
+    background: #f5f8f9;
+}
+.pricing .item{
+    min-height: 400px;
+    padding: 0 15px;
+    background: #fff;
+    box-shadow: 0px 0px 5px #80808031;
+}
+.pricing .item h4{
+    color: #2d2d2d;
+}
+.pricing .item h3{
+    color: #ff6600;
+    text-align: center;
+    font-weight: bolder;
+}
+.pricing .item ul li{
+    list-style: none;
+    font-size: 15px;
+    color: #555555;
+    padding: 15px 0;
+    border-bottom: 1px solid #d0cfcf;
+}
+.pricing .item .btn{
+    color: #fff;
+    background: #ff8800;
+    margin: 0px auto;
+    text-align: center;
+    transition: all 0.4s;
+}
+.pricing .item .btn:hover {
+    background-color: #fff;
+    color: #555555;
+    outline: 1px solid #555555;
+}/**** End amazingTraining Sectiion Styling ****/
+
+/* ********* Start someFects section styling ***************** */
+main .someFacts{
+    width: 100%;
+    min-height: 300px;
+}
+.someFacts .container .row .fa-user{
+    background:#f58439;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}/***** End someFacts section styling *****/
+
+/* ******** Start googlePlayStore section styling ********** */
+main .googlePlayStore{
+    width: 100%;
+    min-height: 380px;
+    padding-top: 20px;
+    background: #ff8800;
+}
+.googlePlayStore .container .row .leftCol img{
+    width: 35%;
+    margin-top: 10px;
+}
+
+.googlePlayStore .container .row .rightCol img{
+    width: 350px;
+   margin-top: 40px;
+}/****** End googlePlayStore section styling *****/
+
+/* *********** Start testiMonials section styling ********** */
+main .testiMonials{
+    width: 100%;
+    min-height: 500px;
+}
+.testiMonials .carousel-item{
+    width: 100%;
+    text-align: center;
+}
+.testiMonials .carousel-item img{
+    width: 170px !important;
+    height: 170px !important;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: 10px auto;
+}
+.testiMonials .carousel-item h3{
+    color: #f58439;
+    font-weight: bold;
+}
+.testiMonials .carousel-item h6{
+    color: #555555;
+}
+.testiMonials .carousel-item b{
+    color: #555555;
+}
+.testiMonials .carousel-item i{
+    color: goldenrod;
+}
+
+/* *****************************************************************************************************
+Start Footer section styling
+****************************************************************************************************** */
+footer{
+    width: 100%;
+    background: #2a2d2f;
+
+}
+
+/* *********** Start footerTop section styling ************ */
+footer .footerTop{
+    width: 100%;
+    min-height: 400px;
+}
+footer .footerTop a:hover{
+    color: #f58439;
+}
+.footerTop .item1 img{
+    width: 90%;
+}
+.footerTop .item1 a{
+    margin: 3px;
+    font-size: 18px;
+    transition: all 0.2s;
+}
+.footerTop  ul li{
+    margin-bottom: 13px;
+}/***** End FooterTop section styling *****/
+
+/* ************ Start footerBottom Section styling ******** */
+footer .footerBottom{
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 25px 0;
+    color: #fff;
+}
+footer .footerBottom a{
+    color: #f58439;
+}
+footer .footerBottom a:hover{
+    color: #fff;
+}/***** End FooterBottom Section styling *****/
+
+
+/* *****************************************************************************************************
+CSS Animation define 
+****************************************************************************************************** */
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes setImgbg{
+    0%{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    100%{
+        background-size: 180%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+/* ********************* loading animation *********************** */
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes loading{
+    0%{
+        color: #555555;
+        transform: rotateY(0deg);
+    }
+    100%{
+        color: goldenrod;
+        transform: rotateY(45deg);
+    }
+}
+/* ********************* infoBtn animation *********************** */
+@keyframes infoBtnChangeBgColor{
+    0%{
+        background: #202020;
+    }
+    100%{
+        background: #008000;
+    }
+}
+
+
+
+/* ******************************************************************************************************
+Start meaia querry
+****************************************************************************************************** */
+@media all and (max-width:1160px){
+    .iso{
+        display: none;
+    }
+    .hero_right h1{
+        font-size: 33px;
+    }
+    .hero_right h4{
+        font-size: 20px;
+    }
+    .hero_right h5{
+        font-size: 16px !important;
+    }
+   
+}
+
+@media all and (min-width:992px) and (max-width:1060px){
+    .phoneNumb{
+        width: 60%;
+    }
+}
+
+@media all and (max-width:992px){
+    .navbar-brand img{
+        width: 215px;
+    }
+    .headerManue .navbar li > ul{
+        margin-left: auto;
+    }
+    .hero{
+        height: 75vh;
+    }
+    .hero_right h1{
+        font-size: 30px;
+    }
+    .hero_right h4{
+        font-size: 19px;
+    }
+    .hero_right h5{
+        font-size: 15px !important;
+    }
+    .hero_right h3{
+        font-size: 25px;
+    }
+    .heading .line{
+        width: 15%;
+    }
+    .training .container .row{
+        padding: 15px;
+        justify-content: space-between;
+        row-gap: 15px;
+    }
+    .training .container .row .col{
+        width: 48%;
+    }
+    .training .container .row .col:nth-child(1),.training .container .row .col:nth-child(2),.training .container .row .col:nth-child(3),.training .container .row .col:nth-child(4){
+        width: 23%;
+    }
+
+    .designing .container-md .item h5{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .designing .container-md .item small{
+        font-size: 13px;
+    }
+    
+   
+   
+}
+
+@media all and (max-width:768px){
+    .hero{
+        height: 65vh;
+    }
+    .hero_right h1{
+        font-size: 20px;
+    }
+    .hero_right h4{
+        font-size: 15px;
+    }
+    .hero_right h5{
+        font-size: 10px !important;
+    }
+    .heading .line{
+        width: 20%;
+    }
+    .training .container .row .col{
+        width: 32% !important;
+    }
+    
+  
+}
+
+@media all and (max-width:576px){
+    .phoneNumb{
+        width: 100%;
+    }
+    .navbar-brand img{
+        width: 170px;
+    }
+    .headerManue nav .navbar-toggler{
+        font-size: 14px !important;
+    }
+    .headerEmail{
+        display: none;
+    }
+    .navbar-brand{
+        width: 180px;
+    }
+    .hero{
+        height: 38vh;
+    }
+    .hero .hero_left #ls6{
+        width: 8%;
+    }
+    .hero .hero_left #ls4{
+        top: 15%;
+    }
+    .hero .hero_left #ls1{
+        width: 60%;
+    }
+    .hero_right h1{
+        font-size: 15px;
+    }
+    .hero_right h4{
+        font-size: 10px;
+    }
+    .hero_right h5{
+        font-size: 8px !important;
+    }
+    .hero_right h3{
+        font-size: 10px;
+    }
+    .hero .hero_right .imgBox img{
+        width: 13%;
+        padding: 1px;
+    }
+    .training .container .row .col{
+        width: 32% !important;
+    }
+    .designing iframe{
+        height: 250px;
+    }
+}
+
+@media all and (max-width:500px){
+    .hero{
+        height: 30vh;
+    }
+    .hero_right h5{
+        font-size: 7px !important;
+    }
+    .hero_right h3{
+        font-size: 9px;
+    }
+    .training .container .row .col{
+        width: 48% !important;
+    }
+   
+}
+
+@media all and (max-width:365px){
+    .training .container .row .col{
+        width: 98% !important;
+    }
+    .training .container .row .col .item{
+        height: 110px !important;
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width:325px){
+    .hero{
+        height: 45vh;
+    }
+}
+
+
+
+
+
+
+

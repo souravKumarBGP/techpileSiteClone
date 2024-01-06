@@ -1,0 +1,27 @@
+/* ======================================= This file is export on style.css ============================== */
+
+/* ********************************************************************************************************
+Start main styling
+******************************************************************************************************** */
+main.placement_main{
+    width: 100%;
+}
+/* ****************** Start placement_main section styling ************** */
+main.placement_main .placement .container .row .imgBox{
+    position: relative;
+    overflow: hidden;
+}
+main.placement_main .placement .container .row .imgBox .captionHover{
+    width: 100%;
+    background: #000000ca !important;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid tomato;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    transition: all 0.5s;
+}
+main.placement_main .placement .container .row .imgBox:hover .captionHover{
+    bottom: 0;
+}
