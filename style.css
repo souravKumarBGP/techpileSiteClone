@@ -70,7 +70,7 @@ body .loading{
     border-radius: 100%;
     margin: auto;
     border: 4px solid #d0cfcf;
-    border-top-color: goldenrod;
+    border-top-color: tomato;
     margin-bottom: 15px;
     animation: rotate 1s linear infinite;
 }
@@ -616,11 +616,11 @@ CSS Animation define
 }
 @keyframes loading{
     0%{
-        color: #555555;
+        color: #d0cfcf;
         transform: rotateY(0deg);
     }
     100%{
-        color: goldenrod;
+        color: gold;
         transform: rotateY(45deg);
     }
 }
