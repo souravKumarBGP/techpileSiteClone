@@ -11,3 +11,9 @@ main.summerTraining_main{
 .summerTraining_main .summerTranning .item small{
     font-size: 13px !important;
 }
+
+/* .contactBox{
+    border: 2px solid red;
+    transform-origin: 100% 0px;
+    transform: skew(30deg);
+} */
